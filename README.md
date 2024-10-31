@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+I am learning react -> project 1, tic tac toe. Let's see how it goes.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
