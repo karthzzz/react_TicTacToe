@@ -1,0 +1,100 @@
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+/* Game container */
+.game {
+  display: flex;
+  flex-direction: row; /* Items side by side */
+  align-items: flex-start; /* Align items to the top */
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Game board */
+.game-board {
+  margin-right: 20px; /* Space between board and info */
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Board row */
+.board-row {
+  display: flex;
+}
+
+/* Square styles */
+.square {
+  background: #fff;
+  border: 2px solid #999;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 50px;
+  height: 50px;
+  width: 50px;
+  margin-right: -2px;
+  margin-top: -2px;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 5px;
+}
+
+.square:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
+}
+
+.square:active {
+  background-color: #ccc;
+}
+
+/* Status message */
+.status {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Game info */
+.game-info {
+  margin-top: 0; /* Remove top margin */
+  position: sticky; /* Keep it in place */
+  top: 20px; /* Adjust as needed */
+}
+
+.game-info ol {
+  padding-left: 30px;
+}
+
+/* Game info buttons */
+.game-info button {
+  background: #fff;
+  border: 2px solid #999;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.game-info button:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
+}
+
+.game-info button:active {
+  background-color: #ccc;
+}
